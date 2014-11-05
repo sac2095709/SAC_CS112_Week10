@@ -1,0 +1,22 @@
+/*
+ * Nghia-Nhan D Duong
+ * CMPR112 - Java Programming
+ * 
+ */
+package week10dicelab1;
+/**
+ *
+ * @author KenOne
+ */
+public class Week10DiceLab1 {
+
+    public static void main(String[] args) {
+         DiceClassLab1 die = new DiceClassLab1();
+        System.out.println(die.Throw());
+        System.out.println(die.Value());
+        System.out.println(die.Throw());
+        System.out.println(die.Value());
+        
+    }
+    
+}
