@@ -1,0 +1,37 @@
+/*
+ * Nghia-Nhan D Duong
+ * CMPR112 - Java Programming
+ * 
+ */
+package week10dicelab2;
+import java.util.Random;
+        
+/**
+ *
+ * @author KenOne
+ */
+public class DiceClassLab2 {
+        private int m_diceFacee;
+    Random randNum;
+
+    public DiceClassLab2() {
+        randNum = new Random();
+    }
+
+    public int Throw() {
+        m_diceFacee = randNum.nextInt(6) + 1;
+        return m_diceFacee;
+    }
+
+    public int Throw(int bounces) {
+        int sum = 0;
+        for (int i = 0; i < bounces; i++) {
+            sum += Throw();
+        }
+        return sum / bounces;
+    }
+
+    public int Value() {
+        return m_diceFacee;
+    }
+}
